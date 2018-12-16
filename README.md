@@ -1,18 +1,13 @@
 # arrayCraziness
-How to work with a poorly designed database.  See readme to understand
+How to work with a poorly designed database. 
 
 
 Explanation:
 
 The goal here was to output users data requests (when a user requests information from a franchise they're interested in). 
-The data has alredy been submitted to the database by another dev.  The table is this:
+The data has alredy been submitted to the database.  The table is just a ID(pk) user_id field(fk), a franchise_ids field (which is a string like '5,6,8,2') and a datetime field
 
-User_id     Franchise_ids
-34           4,6,7,2
-79           5,6
-79           8,22
-41           1,5
-79           4,7,21,3
 
-The franchise_ids are ID fields in another table named franchise and I need data(the franchise name) from this table. 
+
+The franchise_ids are ID fields in another table named franchise and I need data(the franchise name) from this table. I have to cut the string, convert to int and on top of this not output duplicates.  
 
